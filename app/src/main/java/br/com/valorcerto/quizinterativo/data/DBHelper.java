@@ -40,12 +40,11 @@ public class DBHelper extends SQLiteOpenHelper {
                 + COL_ANS   + " INTEGER)";
         db.execSQL(sql);
 
-        // Popula com perguntas iniciais:
+        // perguntas iniciais
         insert(db, "Qual a capital do Brasil?",
                 new String[]{"São Paulo","Brasília","Rio","Salvador"}, 2);
         insert(db, "2 + 2 é igual a?",
                 new String[]{"3","4","5","6"}, 2);
-        // … mais perguntas à sua criatividade
     }
 
     private void insert(SQLiteDatabase db, String text, String[] opts, int ans) {

@@ -25,7 +25,7 @@ public class ResultActivity extends AppCompatActivity {
         float pct = 100f * score / total;
         tvM.setText(pct >= 70 ? "Parabéns!" : "Tente novamente!");
 
-        // Persistir recorde opcional
+
         SharedPreferences p = getSharedPreferences("quiz_prefs", MODE_PRIVATE);
         int best = p.getInt("best_score", 0);
         if (score > best) {

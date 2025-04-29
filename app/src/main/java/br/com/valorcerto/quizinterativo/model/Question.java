@@ -12,7 +12,6 @@ public class Question {
         this.options = options;
         this.correctIndex = correctIndex;
     }
-    // getters...
     public String getText() { return text; }
     public String[] getOptions() { return options; }
     public int getCorrectIndex() { return correctIndex; }
